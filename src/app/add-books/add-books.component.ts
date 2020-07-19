@@ -19,7 +19,7 @@ export class AddBooksComponent implements OnInit {
 
   addBook() {
     const { title, price, pages } = this;
-    this.http.post('http://localhost:3001/books', {
+    this.http.post('http://localhost:8080/books', {
       title,
       price,
       pages

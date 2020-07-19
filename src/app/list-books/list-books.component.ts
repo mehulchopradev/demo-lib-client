@@ -13,7 +13,7 @@ export class ListBooksComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get('http://localhost:3001/books')
+    this.http.get('http://localhost:8080/books')
       .subscribe((data: any[]) => {
         this.books = data;
       });
